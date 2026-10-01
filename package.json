@@ -1,0 +1,18 @@
+{
+  "name": "simple-test-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal MCP server with stdio and Streamable HTTP transports",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:stdio": "node src/index.js stdio",
+    "start:http": "node src/index.js http",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.0.0"
+  }
+}
